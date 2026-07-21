@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>관리자 페이지 — 휴대폰싸게파는사람들</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+
+<div class="gate-box" id="gate-box">
+  <h2>관리자 비밀번호</h2>
+  <input type="password" id="gate-input" placeholder="비밀번호" autocomplete="off">
+  <div class="gate-error" id="gate-error"></div>
+  <button class="btn primary" id="gate-submit" style="width:100%">입장</button>
+</div>
+
+<div class="admin-wrap" id="admin-wrap" hidden>
+  <div class="admin-header">
+    <h1>오늘의 정책 · 기종 관리</h1>
+    <a class="logout-link" id="btn-logout" href="#">로그아웃</a>
+  </div>
+  <div class="admin-updated" id="admin-updated" style="margin-bottom:16px"></div>
+
+  <div class="admin-card">
+    <h3>① 엑셀 서식 받기</h3>
+    <p class="desc">아래 서식에 오늘 판매할 기종·요금제·부가서비스·정책을 채운 뒤 업로드하세요. 시트 이름(정책/기종/요금제/부가서비스)과 열 제목은 바꾸지 마세요.</p>
+    <a class="template-link" href="excel-template/휴대폰정책_서식.xlsx" download>📥 엑셀 서식 다운로드</a>
+  </div>
+
+  <div class="admin-card">
+    <h3>② 엑셀 업로드</h3>
+    <p class="desc">작성한 엑셀 파일(.xlsx)을 아래에 끌어다 놓거나 클릭해서 선택하세요.</p>
+    <label class="upload-drop" id="drop-zone">
+      <div id="drop-label">📄 엑셀 파일을 끌어다 놓거나 클릭하세요</div>
+      <input type="file" id="file-input" accept=".xlsx,.xls">
+    </label>
+    <div id="parse-msg"></div>
+  </div>
+
+  <div class="admin-card" id="preview-card" hidden>
+    <h3>③ 내용 확인</h3>
+    <p class="desc">아래 내용이 맞는지 확인한 뒤 적용해주세요. 적용 즉시 고객 화면에 반영됩니다.</p>
+    <div id="preview-body"></div>
+    <div class="admin-actions">
+      <button class="btn primary" id="btn-apply">이 내용으로 사이트에 적용하기</button>
+    </div>
+    <div id="apply-msg"></div>
+  </div>
+</div>
+
+<script src="js/vendor/xlsx.full.min.js"></script>
+<script src="js/store-data.js"></script>
+<script type="module" src="js/admin.js"></script>
+</body>
+</html>
