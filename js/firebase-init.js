@@ -10,12 +10,12 @@
  *  반영되지 않습니다. Firebase 연결 전까지 테스트 용도로만 사용하세요.)
  * ========================================================= */
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDx•••••••••••••••••••••••••••••••",
+  authDomain: "silverbell-1.firebaseapp.com",
+  projectId: "silverbell-1",
+  storageBucket: "silverbell-1.firebasestorage.app",
+  messagingSenderId: "127277229737",
+  appId: "1:127277229737:web:4cde4b43115105d8d26bb8"
 };
 
 const FIREBASE_CONFIGURED = firebaseConfig.apiKey !== "YOUR_API_KEY";
