@@ -14,7 +14,7 @@ const STORE = {
   phone: "010-4191-1918",
   phoneDigits: "01041911918",
   address: "광주광역시 광산구 장신로 134 1층 106호",
-  kakaoUrl: "http://pf.kakao.com/_xkvzXn/chat",
+  kakaoUrl: "http://pf.kakao.com/_nQXxdn",
   prepaidUrl: "https://bbangbbangtel.github.io/Prepaid-mobile-landing",
   hours: "전화 문의 후 방문 추천 (영업시간 외에도 문자 남겨주시면 순차 연락드립니다)"
 };
